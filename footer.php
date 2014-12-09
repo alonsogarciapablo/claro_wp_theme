@@ -14,7 +14,7 @@
             <li><a target="_blank" href="http://codepen.io/alonsogarciapablo/">Codepen</a></li>
           </ul>
           <p class="copyright">
-            Designed and built by me
+            Designed and built by me. Check out the <a href="https://github.com/alonsogarciapablo/claro_wp_theme" target="_blank">source code here</a>.
           </p>
         </div>
       </div>
@@ -25,7 +25,7 @@
     <script>
       $(document).foundation();
     </script>
-    
+
     <?php wp_footer(); ?>
   </body>
 </html>

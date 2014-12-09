@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <title><?php wp_title( '-', true, 'right' ); ?> Pablo Alonso</title>
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/foundation.min.css" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
