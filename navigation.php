@@ -1,4 +1,3 @@
-
 <section class="navigation">
   <div class="row">
     <div class="small-11 small-centered medium-7 columns">

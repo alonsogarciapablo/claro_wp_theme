@@ -1,6 +1,6 @@
 <?php
 
-  // function to count views.
+  // Function to count views (used in single.php)
   function setPostViews($postID) {
     $count_key = 'post_views_count';
     $count = get_post_meta($postID, $count_key, true);
@@ -14,16 +14,19 @@
     }
   }
 
+  // Customize length of excerpt
   function custom_excerpt_length( $length ) {
     return 25;
   }
   add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
+  // Display ellipsis after excerpt
   function new_excerpt_more( $more ) {
     return '…';
   }
   add_filter('excerpt_more', 'new_excerpt_more');
 
+  // Register the menu
   function register_my_menu() {
     register_nav_menu('header-menu',__( 'Header Menu' ));
   }

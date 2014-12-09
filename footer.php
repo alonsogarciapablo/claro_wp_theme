@@ -1,4 +1,4 @@
-    </div>
+    </div><!-- content -->
 
     <footer id="site-footer">
       <div class="row">
