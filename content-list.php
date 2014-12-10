@@ -8,6 +8,6 @@
     <?php the_excerpt(); ?>
   </p>
   <footer>
-    <?php the_date(); ?>
+    <?php echo get_the_date( get_option('date_format') ); ?>
   </footer>
 </article>
