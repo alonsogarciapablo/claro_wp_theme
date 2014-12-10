@@ -15,7 +15,7 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,900,700,600,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,500,900,700,600,300' rel='stylesheet' type='text/css'>
-    <script src="js/vendor/modernizr.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr.js"></script>
     
     <?php wp_head(); ?>
   </head>
