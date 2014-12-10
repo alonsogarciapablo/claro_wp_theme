@@ -1,4 +1,4 @@
-<?php setPostViews(get_the_ID()); ?>
+<?php if (!is_preview()) { setPostViews(get_the_ID()); } ?>
 
 <?php get_header(); ?>
 
