@@ -22,6 +22,14 @@ a:focus {
   color: #f33329;
 }
 
+p {
+  font-size: 1.1rem;
+}
+
+ul,ol,dl {
+  font-size: 1.1rem;
+}
+
 .centered-inline-list {
   list-style-type: none;
   text-align: center;
