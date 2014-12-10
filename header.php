@@ -3,7 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><?php wp_title( '-', true, 'right' ); ?> Pablo Alonso</title>
+    <meta name="description" content="<?php if ( is_single() ) {
+        single_post_title('', true);
+      } else {
+        bloginfo('name'); echo " - "; bloginfo('description');
+       }
+    ?>" />
+    <title><?php if (is_front_page()) { bloginfo('name'); echo " - "; bloginfo('description'); } else { wp_title( '-', true, 'right' ); } ?> Pablo Alonso</title>
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/foundation.min.css" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -25,26 +31,18 @@
           <div class="row">
             <p class="small-12 medium-6 medium-centered large-7 columns text-center who-am-i">
               Hi! I'm a remote full-stack software developer who cares about UX and builds products that delight and help real people.
-              <a href="mailto:alonsogarciapablo@gmail.com?subject=Hello!">Let's talk!</a>
+              <a href="mailto:<?php bloginfo('admin_email') ?>?subject=Hello!">Let's talk!</a>
             </p>
           </div>
         </div>
       </div>
-      
+
       <nav id="site-nav">
         <?php 
           $defaults = array(
-          	'theme_location'  => 'header-menu',
-          	'container'       => false,
-          	'menu_class'      => 'centered-inline-list',
-          	'echo'            => true,
-          	'fallback_cb'     => 'wp_page_menu',
-          	'before'          => '',
-          	'after'           => '',
-          	'link_before'     => '',
-          	'link_after'      => '',
-          	'depth'           => 0,
-          	'walker'          => ''
+            'theme_location'  => 'header-menu',
+            'container'       => false,
+            'menu_class'      => 'centered-inline-list'
           );
 
           wp_nav_menu( $defaults );
@@ -53,3 +51,4 @@
     </header>
 
     <div id="content">
+

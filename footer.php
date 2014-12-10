@@ -7,7 +7,7 @@
             <strong>Pablo</strong> Alonso
           </h4>
           <ul class="centered-inline-list social-media-links">
-            <li><a href="mailto:alonsogarciapablo@gmail.com">Email</a></li>
+            <li><a href="mailto:<?php bloginfo('admin_email') ?>">Email</a></li>
             <li><a target="_blank" href="http://linkedin.com/in/alonsogarciapablo">LinkedIn</a></li>
             <li><a target="_blank" href="http://twitter.com/_pablo_alonso">Twitter</a></li>
             <li><a target="_blank" href="https://github.com/alonsogarciapablo">Github</a></li>
