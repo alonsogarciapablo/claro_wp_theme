@@ -95,12 +95,14 @@ a:focus {
 #site-nav ul > li > a {
   font-weight: 100;
 }
-#site-nav ul > li:not(.current-menu-item) a,
-#site-nav ul > li:hover a {
-  color: #f33329;
+#site-nav ul > li.current-menu-item {
+}
+#site-nav ul > li:not(.current-menu-item):hover a {
+  text-decoration: underline;
 }
 #site-nav ul > li.current-menu-item a {
   font-weight: 500;
+  color: #f33329;
 }
 
 /* page-section */
