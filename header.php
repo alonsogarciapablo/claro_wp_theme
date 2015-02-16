@@ -31,7 +31,7 @@
           <div class="row">
             <p class="small-12 medium-6 medium-centered large-7 columns text-center who-am-i">
               Hi! I'm a Ruby on Rails and front-end web developer. I ♥ crafting great
-              user experiencies and I'm currently available for freelance work.<br>
+              user experiencies. I'm currently available for freelance work.<br>
               <a href="mailto:<?php bloginfo('admin_email') ?>?subject=Hello!">Let's talk!</a>
             </p>
           </div>
